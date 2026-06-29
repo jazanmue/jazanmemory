@@ -1,2 +1,16 @@
-# jazanmemory
-Jazan Memory | Digital archive documenting the historical documents, deeds, heritage, architecture and cultural memory of Jazan.
+# Jazan Memory
+
+موقع أرشيفي ثابت لعرض وثائق وصور تاريخية مرتبطة بمنطقة جازان.
+
+## محتويات المشروع
+- الصفحة الرئيسية: index.html
+- لوحة الإدارة: admin.html
+- بيانات الوثائق: data.js
+- تنسيقات الموقع: styles.css
+- سكربت التصفح والبحث: app.js
+- صور الوثائق: doc_001.jpg وما بعدها
+
+## ملاحظات
+- جميع الوثائق المعروضة في الموقع بصيغة صور.
+- يمكن تعديل أسماء الوثائق ووصفها من ملف data.js.
+- يمكن تغيير الصور أو إضافة صور جديدة مع تحديث بياناتها.
