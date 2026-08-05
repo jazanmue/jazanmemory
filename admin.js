@@ -10,7 +10,7 @@ async function saveItem(e){
   const id=f('itemId').value||('x'+Date.now());
   const file=f('file').files[0];
   const old=byId(id);
-  let src=old?.src||'assets/images/deed-1.jpg';
+  let src=old?.src||'deed-1.jpg';
   let media=old?.media||'image';
   if(file){
     src=await fileToDataURL(file);
@@ -20,7 +20,7 @@ async function saveItem(e){
   } else {
     media='image';
   }
-  if(f('type').value==='منشور' && !file && !old){ src='assets/images/region-tihama.png'; media='image'; }
+  if(f('type').value==='منشور' && !file && !old){ src='region-tihama.png'; media='image'; }
   const item={
     id,
     type:f('type').value,
