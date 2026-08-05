@@ -4,19 +4,19 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>الأرشيف | ذاكرة جازان</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
 <header class="topbar">
   <nav class="nav">
-    <a class="brand" href="index.html"><img src="logo.png" alt="ذاكرة جازان"><div><h1>ذاكرة جازان</h1><span>JAZAN MEMORY</span></div></a>
+    <a class="brand" href="index.html"><img src="assets/images/logo.png" alt="ذاكرة جازان"><div><h1>ذاكرة جازان</h1><span>JAZAN MEMORY</span></div></a>
     <div class="links">
       <a href="index.html">الرئيسية</a>
       <a class="active" href="documents.html">الأرشيف</a>
       <a href="board.html">لوحة الذكريات</a>
-      <a href="admin.html">لوحة الإدارة</a>
+      <a href="admin.html">لوحة ذاكرة جازان</a>
     </div>
-    <div class="actions"><a class="btn ghost" href="admin.html">لوحة الإدارة 🔒</a></div>
+    <div class="actions"><a class="btn ghost" href="admin.html">لوحة ذاكرة جازان 🔒</a></div>
   </nav>
 </header>
 <section class="pageHero pageHeroDocs"><h1>الأرشيف الرقمي</h1><p>بحث وتصنيف الوثائق والصور والفيديوهات والمنشورات التاريخية في أرشيف ذاكرة جازان.</p></section>
@@ -47,8 +47,8 @@
 </main>
 <footer class="footer"><div class="copyright">جميع الحقوق محفوظة © ذاكرة جازان 2026</div></footer>
 <div class="modal" id="modal"><div class="modalContent"><button class="btn dark" onclick="closeModal()">إغلاق</button><h2 id="modalTitle"></h2><div id="modalBody"></div></div></div>
-<script src="data.js"></script>
-<script src="main.js"></script>
+<script src="assets/js/data.js"></script>
+<script src="assets/js/main.js"></script>
 <script>
 document.addEventListener('DOMContentLoaded',()=>{const p=new URLSearchParams(location.search);if(p.get('type'))document.querySelector('#typeFilter').value=p.get('type');if(p.get('cat'))document.querySelector('#catFilter').value=p.get('cat');renderArchive();});
 </script>

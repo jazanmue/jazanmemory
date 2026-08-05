@@ -3,35 +3,35 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>لوحة الإدارة | ذاكرة جازان</title>
-  <link rel="stylesheet" href="style.css">
+  <title>لوحة ذاكرة جازان | ذاكرة جازان</title>
+  <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
 <header class="topbar">
   <nav class="nav">
-    <a class="brand" href="index.html"><img src="logo.png" alt="ذاكرة جازان"><div><h1>ذاكرة جازان</h1><span>JAZAN MEMORY</span></div></a>
+    <a class="brand" href="index.html"><img src="assets/images/logo.png" alt="ذاكرة جازان"><div><h1>ذاكرة جازان</h1><span>JAZAN MEMORY</span></div></a>
     <div class="links"><a href="index.html">الرئيسية</a><a href="documents.html">الأرشيف</a><a href="board.html">لوحة الذكريات</a></div>
     <div class="actions"><a class="btn ghost" href="index.html">عودة للموقع</a></div>
   </nav>
 </header>
 <div id="login" class="loginBox">
-  <img src="logo.png" alt="logo">
-  <h2>دخول الإدارة</h2>
+  <img src="assets/images/logo.png" alt="logo">
+  <h2>دخول ذاكرة جازان</h2>
   <p>كلمة المرور الافتراضية داخل الملف: <b>1351</b></p>
   <input id="pass" type="password" placeholder="كلمة المرور">
   <button class="btn dark" style="width:100%;margin-top:12px" onclick="login()">دخول</button>
 </div>
 <main id="dashboard" class="adminWrap hide">
   <aside class="panel adminMenu">
-    <h2>لوحة الإدارة</h2>
+    <h2>لوحة ذاكرة جازان</h2>
     <a class="active" href="#add">إضافة / تعديل</a>
     <a href="#list">قائمة المواد</a>
     <a href="#backup">النسخ والاستيراد</a>
     <button class="btn" onclick="logout()" style="width:100%;margin-top:12px">تسجيل خروج</button>
-    <p class="sideNote">هذه النسخة تعمل بدون قاعدة بيانات. الإضافات تُحفظ في متصفح الإدارة، ويمكن تصديرها واستيرادها كملف JSON.</p>
+    <p class="sideNote">هذا الإصدار تعمل بدون قاعدة بيانات. الإضافات تُحفظ في متصفح ذاكرة جازان، ويمكن تصديرها واستيرادها كملف JSON.</p>
   </aside>
   <section>
-    <div class="adminHint">يمكنك هنا إضافة وثيقة، صورة، فيديو أو <b>منشور</b> مثل المنتديات والبلاك بورد: اكتبي عنوانًا ونصًا وارفعِي صورة إن رغبتِ، وسيظهر المنشور في صفحة <b>لوحة الذكريات</b> وفي الصفحة الرئيسية.</div>
+    <div class="adminHint">يمكنك هنا إضافة وثيقة، صورة، فيديو أو <b>منشور</b> مثل المنتديات والبلاك بورد: اكتب عنوانًا ونصًا وارفع صورة إن رغبتِ، وسيظهر المنشور في صفحة <b>لوحة الذكريات</b> وفي الصفحة الرئيسية.</div>
     <div class="panel" id="add">
       <h2>إضافة وثيقة أو صورة أو فيديو أو منشور</h2>
       <form id="itemForm" class="form">
@@ -45,11 +45,11 @@
             <option>إعلان</option><option>ذكريات وقصص</option><option>مشاركات الأعضاء</option>
           </select></div>
           <div><label>العنوان</label><input id="title" required placeholder="مثال: صك بيع أرض زراعية أو ذكرى من قرية قديمة"></div>
-          <div><label>اسم الكاتب / المصدر</label><input id="author" placeholder="مثال: الإدارة / اسم العائلة / اسم الراوي"></div>
+          <div><label>اسم الكاتب / المصدر</label><input id="author" placeholder="مثال: ذاكرة جازان / اسم العائلة / اسم الراوي"></div>
           <div><label>التاريخ</label><input id="year" placeholder="مثال: 1351 هـ أو 2026م"></div>
           <div><label>الموقع</label><input id="place" placeholder="مثال: صبيا / تهامة / الساحل"></div>
           <div class="full"><label>رفع صورة أو فيديو</label><input id="file" type="file" accept="image/*,video/*"></div>
-          <div class="full"><label>الوصف أو نص المنشور</label><textarea id="desc" rows="6" placeholder="اكتبي وصف الوثيقة أو نص المنشور الكامل، ويمكن أن يكون بصيغة قريبة من المنتديات أو البلاك بورد."></textarea></div>
+          <div class="full"><label>الوصف أو نص المنشور</label><textarea id="desc" rows="6" placeholder="اكتب وصف الوثيقة أو نص المنشور الكامل، ويمكن أن يكون بصيغة قريبة من المنتديات أو البلاك بورد."></textarea></div>
         </div>
         <button class="btn dark" style="margin-top:16px">حفظ المادة</button>
         <button type="reset" class="btn ghost" style="margin-top:16px;color:#8a5d22">تفريغ النموذج</button>
@@ -76,7 +76,7 @@
   </section>
 </main>
 <div class="toast" id="toast"></div>
-<script src="data.js"></script>
-<script src="admin.js"></script>
+<script src="assets/js/data.js"></script>
+<script src="assets/js/admin.js"></script>
 </body>
 </html>

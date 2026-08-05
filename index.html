@@ -1,156 +1,164 @@
 <!doctype html>
 <html lang="ar" dir="rtl">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>ذاكرة جازان | أرشيف وثائقي وتراثي</title>
-<meta name="description" content="أرشيف رقمي يعرض وثائق وصورًا ومواد تراثية عن جازان: وثائق، ألعاب شعبية، لباس تراثي، ومرئيات من الموروث.">
-<style>
-:root{--navy:#082f49;--deep:#0b2239;--teal:#0f766e;--sand:#e8d8b9;--ivory:#fbf7ef;--gold:#b08a3c;--ink:#1f2937;--soft:#f2eadb;--paper:#fffaf0}
-*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Tahoma,Arial,sans-serif;background:var(--ivory);color:var(--ink);line-height:1.9}a{color:inherit;text-decoration:none}img,video,iframe{max-width:100%;display:block}
-.hero{background:radial-gradient(circle at 18% 20%,rgba(15,118,110,.16),transparent 32%),linear-gradient(140deg,var(--ivory),#efe0c2);position:relative;overflow:hidden}.hero:before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(8,47,73,.08),transparent),url('doc_01.jpg');background-size:520px auto;background-repeat:no-repeat;background-position:left top;opacity:.10;filter:grayscale(1)}
-.nav{position:relative;z-index:2;display:flex;justify-content:space-between;gap:24px;align-items:center;padding:24px clamp(18px,5vw,72px)}.brand{font-weight:800;color:var(--navy);font-size:24px}.links{display:flex;gap:12px;flex-wrap:wrap}.links a{padding:6px 10px;border-radius:999px;color:#164158}.links a:hover{background:rgba(8,47,73,.08)}
-.hero-grid{position:relative;z-index:2;display:grid;grid-template-columns:1.15fr .85fr;gap:42px;align-items:center;padding:38px clamp(18px,5vw,72px) 70px}.eyebrow{display:inline-block;color:var(--teal);font-weight:700;border:1px solid rgba(15,118,110,.24);padding:4px 14px;border-radius:999px;background:rgba(255,255,255,.45)}h1{font-size:clamp(42px,7vw,88px);line-height:1.18;margin:20px 0;color:var(--navy);letter-spacing:-1px}.hero-text p{font-size:20px;max-width:760px}.cta-row{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}.btn{display:inline-flex;align-items:center;justify-content:center;border:1px solid rgba(8,47,73,.25);padding:11px 20px;border-radius:16px;background:rgba(255,255,255,.7);font-weight:700}.btn.primary{background:var(--navy);color:#fff;border-color:var(--navy)}.hero-card{background:rgba(255,255,255,.42);border:1px solid rgba(8,47,73,.12);border-radius:34px;padding:16px;box-shadow:0 24px 80px rgba(8,47,73,.14)}.hero-card img{border-radius:24px;width:100%;height:auto;object-fit:contain}
-.section{padding:76px clamp(18px,5vw,72px)}.tinted{background:linear-gradient(180deg,#f3ead8,#fff8ed)}.section-head{max-width:980px;margin-bottom:34px}.section-head.center{text-align:center;margin-inline:auto}.section-head span{color:var(--gold);font-weight:800}.section h2{font-size:clamp(30px,4vw,54px);margin:0;color:var(--navy)}.section-head p{font-size:18px;color:#475569}.intro-panel{background:linear-gradient(180deg,#fffaf1,var(--ivory))}
-.feature-grid,.cards,.videos,.download-list{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:18px}.feature-grid article,.note-box,.doc-card,.info-card,.video-card,.pdf-preview,.island-card,.pdf-embed{background:rgba(255,255,255,.78);border:1px solid rgba(8,47,73,.11);border-radius:24px;box-shadow:0 14px 38px rgba(8,47,73,.07)}.feature-grid article,.info-card,.note-box{padding:22px}h3{color:var(--teal);margin:0 0 8px;font-size:23px}p{color:#475569}.note-box{margin-bottom:26px;border-right:5px solid var(--gold)}
-.doc-gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px}.doc-card{padding:12px;transition:.2s}.doc-card:hover{transform:translateY(-4px);box-shadow:0 18px 44px rgba(8,47,73,.14)}.doc-card img{width:100%;height:auto;aspect-ratio:auto;object-fit:contain;border-radius:18px;background:#f8f3e8}.doc-card b{display:block;margin:10px 6px 0;color:var(--navy)}.doc-card small{display:block;margin:0 6px 8px;color:#64748b;font-size:12px}
-.pdf-preview{margin-top:30px;padding:22px;display:grid;grid-template-columns:320px 1fr;gap:24px;align-items:start}.preview-images{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:12px}.preview-images img{border-radius:16px;border:1px solid rgba(8,47,73,.12);width:100%;height:auto;object-fit:contain;background:#fff}.pdf-embed{margin-top:18px;padding:16px}.pdf-embed iframe{width:100%;height:650px;border:0;border-radius:18px;background:#fff}
-.island-section{padding-top:30px}.island-card{display:grid;grid-template-columns:1fr 1fr;gap:28px;align-items:center;overflow:hidden;padding:18px}.island-card img{width:100%;height:auto;max-height:520px;object-fit:contain;border-radius:20px;background:#e8f4f2}.island-card div{padding:10px 16px}.island-card span{color:var(--gold);font-weight:800}
-.video-card{padding:12px;margin:0}.video-card video{width:100%;height:auto;border-radius:18px;background:#111;max-height:460px;object-fit:contain}.video-card figcaption{padding:8px 6px;color:var(--navy);font-weight:700}.video-card figcaption a{color:var(--teal);text-decoration:underline}.download-list a{padding:18px 20px;border-radius:18px;background:var(--navy);color:#fff;font-weight:700}
-footer{background:var(--deep);color:#fff;padding:34px clamp(18px,5vw,72px);text-align:center}footer p{margin:4px 0 0;color:#d8e6ef}
-@media(max-width:850px){.hero-grid,.pdf-preview,.island-card{grid-template-columns:1fr}.links{font-size:14px}.pdf-embed iframe{height:460px}}
-</style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>ذاكرة جازان | أرشيف الوثائق والصكوك</title>
+  <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-<header class="hero"><nav class="nav"><div class="brand">ذاكرة جازان</div><div class="links"><a href="#documents">الوثائق</a><a href="#games">الألعاب الشعبية</a><a href="#clothing">اللباس التراثي</a><a href="#videos">المرئيات</a><a href="#files">الملفات</a></div></nav><section class="hero-grid"><div class="hero-text"><span class="eyebrow">أرشيف حي للمكان والإنسان</span><h1>مواد تراثية ووثائقية من ذاكرة جازان</h1><p>مساحة تجمع الوثيقة والصورة والموروث الشعبي في عرض مرتب يحفظ التفاصيل ويقربها للباحث والزائر.</p><div class="cta-row"><a class="btn primary" href="#documents">استعراض الوثائق</a><a class="btn" href="#files">فتح الملفات</a></div></div><div class="hero-card"><img src="cover.png" alt="غلاف ذاكرة الفكر في جازان"></div></section></header>
-<main>
-<section class="section intro-panel"><div class="section-head center"><span>تمهيد</span><h2>ما الذي تضمه هذه المواد؟</h2><p>تضم الصفحة وثائق خطية، وملفين تعريفيين عن الألعاب الشعبية واللباس التراثي، ومقاطع مرئية وصورة من فرسان. تم تعديل عرض الصور بحيث تظهر كاملة داخل الصفحة مع رابط لفتحها بالحجم الأكبر.</p></div><div class="feature-grid"><article><h3>وثائق بخط اليد</h3><p>نماذج أرشيفية تتضمن مبايعات ومكاتبات وأطرافًا وشهودًا وتواريخ هجرية، وتُعرض كمادة أولية قابلة للتحقيق.</p></article><article><h3>موروث اجتماعي</h3><p>مواد تشرح جانبًا من الحياة اليومية: الألعاب، اللباس، الزينة، ومظاهر المناسبات.</p></article><article><h3>ذاكرة مكان</h3><p>صورة فرسان والمرئيات تربط الوثيقة بالمكان والبحر والإنسان.</p></article></div></section>
-<section id="documents" class="section"><div class="section-head"><span>01</span><h2>الوثائق التاريخية</h2><p>مجموعة صور لوثائق قديمة بخط اليد. تظهر الصور كاملة داخل البطاقات، وبالضغط على أي وثيقة تُفتح بحجم أكبر.</p></div><div class="note-box"><h3>قراءة وصفية أولية</h3><p>تظهر الوثائق بوصفها سجلات ومكاتبات محلية تتصل بالأملاك والبيع والشراء والشروط والشهود. لم تُفرّغ الوثائق حرفيًا حتى لا يُنسب نص غير محقق إلى الأصل، وإنما عُرضت بصفتها مادة أرشيفية أولية.</p></div><div class="doc-gallery"><a class="doc-card" href="doc_01.jpg" target="_blank" rel="noopener">
-  <img src="doc_01_thumb.jpg" alt="وثيقة أرشيفية رقم 1" loading="lazy">
-  <b>وثيقة رقم 1</b>
-  <small>اضغطي لفتح الصورة كاملة</small>
-</a>
-<a class="doc-card" href="doc_02.jpg" target="_blank" rel="noopener">
-  <img src="doc_02_thumb.jpg" alt="وثيقة أرشيفية رقم 2" loading="lazy">
-  <b>وثيقة رقم 2</b>
-  <small>اضغطي لفتح الصورة كاملة</small>
-</a>
-<a class="doc-card" href="doc_03.jpg" target="_blank" rel="noopener">
-  <img src="doc_03_thumb.jpg" alt="وثيقة أرشيفية رقم 3" loading="lazy">
-  <b>وثيقة رقم 3</b>
-  <small>اضغطي لفتح الصورة كاملة</small>
-</a>
-<a class="doc-card" href="doc_04.jpg" target="_blank" rel="noopener">
-  <img src="doc_04_thumb.jpg" alt="وثيقة أرشيفية رقم 4" loading="lazy">
-  <b>وثيقة رقم 4</b>
-  <small>اضغطي لفتح الصورة كاملة</small>
-</a>
-<a class="doc-card" href="doc_05.jpg" target="_blank" rel="noopener">
-  <img src="doc_05_thumb.jpg" alt="وثيقة أرشيفية رقم 5" loading="lazy">
-  <b>وثيقة رقم 5</b>
-  <small>اضغطي لفتح الصورة كاملة</small>
-</a>
-<a class="doc-card" href="doc_06.jpg" target="_blank" rel="noopener">
-  <img src="doc_06_thumb.jpg" alt="وثيقة أرشيفية رقم 6" loading="lazy">
-  <b>وثيقة رقم 6</b>
-  <small>اضغطي لفتح الصورة كاملة</small>
-</a>
-<a class="doc-card" href="doc_07.jpg" target="_blank" rel="noopener">
-  <img src="doc_07_thumb.jpg" alt="وثيقة أرشيفية رقم 7" loading="lazy">
-  <b>وثيقة رقم 7</b>
-  <small>اضغطي لفتح الصورة كاملة</small>
-</a>
-<a class="doc-card" href="doc_08.jpg" target="_blank" rel="noopener">
-  <img src="doc_08_thumb.jpg" alt="وثيقة أرشيفية رقم 8" loading="lazy">
-  <b>وثيقة رقم 8</b>
-  <small>اضغطي لفتح الصورة كاملة</small>
-</a>
-<a class="doc-card" href="doc_09.jpg" target="_blank" rel="noopener">
-  <img src="doc_09_thumb.jpg" alt="وثيقة أرشيفية رقم 9" loading="lazy">
-  <b>وثيقة رقم 9</b>
-  <small>اضغطي لفتح الصورة كاملة</small>
-</a>
-<a class="doc-card" href="doc_10.jpg" target="_blank" rel="noopener">
-  <img src="doc_10_thumb.jpg" alt="وثيقة أرشيفية رقم 10" loading="lazy">
-  <b>وثيقة رقم 10</b>
-  <small>اضغطي لفتح الصورة كاملة</small>
-</a>
-<a class="doc-card" href="doc_11.jpg" target="_blank" rel="noopener">
-  <img src="doc_11_thumb.jpg" alt="وثيقة أرشيفية رقم 11" loading="lazy">
-  <b>وثيقة رقم 11</b>
-  <small>اضغطي لفتح الصورة كاملة</small>
-</a>
-<a class="doc-card" href="doc_12.jpg" target="_blank" rel="noopener">
-  <img src="doc_12_thumb.jpg" alt="وثيقة أرشيفية رقم 12" loading="lazy">
-  <b>وثيقة رقم 12</b>
-  <small>اضغطي لفتح الصورة كاملة</small>
-</a>
-<a class="doc-card" href="doc_13.jpg" target="_blank" rel="noopener">
-  <img src="doc_13_thumb.jpg" alt="وثيقة أرشيفية رقم 13" loading="lazy">
-  <b>وثيقة رقم 13</b>
-  <small>اضغطي لفتح الصورة كاملة</small>
-</a>
-<a class="doc-card" href="doc_14.jpg" target="_blank" rel="noopener">
-  <img src="doc_14_thumb.jpg" alt="وثيقة أرشيفية رقم 14" loading="lazy">
-  <b>وثيقة رقم 14</b>
-  <small>اضغطي لفتح الصورة كاملة</small>
-</a>
-<a class="doc-card" href="doc_15.jpg" target="_blank" rel="noopener">
-  <img src="doc_15_thumb.jpg" alt="وثيقة أرشيفية رقم 15" loading="lazy">
-  <b>وثيقة رقم 15</b>
-  <small>اضغطي لفتح الصورة كاملة</small>
-</a>
-<a class="doc-card" href="doc_16.jpg" target="_blank" rel="noopener">
-  <img src="doc_16_thumb.jpg" alt="وثيقة أرشيفية رقم 16" loading="lazy">
-  <b>وثيقة رقم 16</b>
-  <small>اضغطي لفتح الصورة كاملة</small>
-</a>
-<a class="doc-card" href="doc_17.jpg" target="_blank" rel="noopener">
-  <img src="doc_17_thumb.jpg" alt="وثيقة أرشيفية رقم 17" loading="lazy">
-  <b>وثيقة رقم 17</b>
-  <small>اضغطي لفتح الصورة كاملة</small>
-</a>
-<a class="doc-card" href="doc_18.jpg" target="_blank" rel="noopener">
-  <img src="doc_18_thumb.jpg" alt="وثيقة أرشيفية رقم 18" loading="lazy">
-  <b>وثيقة رقم 18</b>
-  <small>اضغطي لفتح الصورة كاملة</small>
-</a>
-<a class="doc-card" href="doc_19.jpg" target="_blank" rel="noopener">
-  <img src="doc_19_thumb.jpg" alt="وثيقة أرشيفية رقم 19" loading="lazy">
-  <b>وثيقة رقم 19</b>
-  <small>اضغطي لفتح الصورة كاملة</small>
-</a></div></section>
-<section class="section island-section"><div class="island-card"><img src="farasan-islands.jpg" alt="مشهد بحري من جزر فرسان" loading="lazy"><div><span>مشهد من فرسان</span><h2>الجزيرة بوصفها ذاكرة بحرية</h2><p>أُضيفت صورة فرسان كمساحة بصرية تربط أرشيف جازان ببحرها وجزرها، وتمنح الصفحة تنوعًا بين الوثيقة الخطية والمشهد الطبيعي.</p></div></div></section>
-<section id="games" class="section tinted"><div class="section-head"><span>02</span><h2>الألعاب الشعبية في منطقة جازان</h2><p>يعرض الملف الألعاب الشعبية بوصفها وسيلة ترفيه وتسلية بعد الأعمال اليومية، وتتنوع بين التفكير، والقوة، والتحدي، والمهارات الفردية والجماعية.</p></div><div class="cards"><article class="info-card"><h3>المصحر</h3><p>لعبة جماعية للشباب بين فريقين، بأدوات بسيطة مثل العصا وكرة يدوية من الأقمشة أو الخوص.</p></article><article class="info-card"><h3>الساري والمراصعة</h3><p>ألعاب يظهر فيها تحدي القوة، بين فرق أو أفراد، وفيها حضور للقيادة والمواجهة البدنية.</p></article><article class="info-card"><h3>السباحة والجري</h3><p>ممارسات تعتمد على اللياقة والخفة، وترتبط بالأودية والغدر وميدان السباق.</p></article><article class="info-card"><h3>المزقرة والمدوام</h3><p>ألعاب مهارية بأدوات خشبية بسيطة، تقوم على التصويب أو دوران القطعة أطول مدة.</p></article><article class="info-card"><h3>شَعرة بقرة والزقطة</h3><p>ألعاب تعتمد على التخمين والتركيز وخفة اليد، وتلعبها فئات مختلفة.</p></article><article class="info-card"><h3>المدريهة وحل الألغاز</h3><p>يجتمع فيها الترفيه الشعبي مع الذكاء وسرعة البديهة وحضور الأطفال والكبار.</p></article></div><div class="pdf-preview"><div><h3>معاينة ملف الألعاب</h3><p>الصور أدناه تظهر الصفحات كاملة، ويمكن فتح ملف PDF مباشرة.</p><a class="btn primary" href="popular_games.pdf" target="_blank" rel="noopener">فتح ملف الألعاب الشعبية</a></div><div class="preview-images"><a href="popular_games_page_1_full.jpg" target="_blank"><img src="popular_games_page_1_full.jpg" alt="صفحة 1 من ملف الألعاب الشعبية"></a><a href="popular_games_page_2_full.jpg" target="_blank"><img src="popular_games_page_2_full.jpg" alt="صفحة 2 من ملف الألعاب الشعبية"></a><a href="popular_games_page_3_full.jpg" target="_blank"><img src="popular_games_page_3_full.jpg" alt="صفحة 3 من ملف الألعاب الشعبية"></a></div></div><div class="pdf-embed"><h3>المستند داخل الصفحة</h3><iframe src="popular_games.pdf#toolbar=1"></iframe></div></section>
-<section id="clothing" class="section"><div class="section-head"><span>03</span><h2>اللباس التراثي</h2><p>يعرض القسم اللباس والزينة في جازان بين الحياة اليومية والمناسبات، مع تفصيل لألبسة الرجال والنساء والحلي والعناصر العطرية والرمزية.</p></div><div class="cards"><article class="info-card"><h3>لباس الرجال اليومي</h3><p>السديرية، الأزر والوزر، الحوك، الحطيم، الجرفي واللحاف الدريهمي.</p></article><article class="info-card"><h3>اللحاف والحزام</h3><p>اللحاف معلم رمزي للأصالة، والحزام الجلدي يثبت به الخنجر أو الجنبية.</p></article><article class="info-card"><h3>العصابة والسير</h3><p>تجمع بين تثبيت الشعر والزينة، وقد تدخل فيها النباتات العطرية أو الجلد المرصع.</p></article><article class="info-card"><h3>لباس النساء اليومي</h3><p>المدرعة والصيغة والحلي الفضية مثل الأوضاح والمسك والخلخال والخواتم.</p></article><article class="info-card"><h3>الكرتة والمظلة والقطاعة</h3><p>الكرتة للتطريز والمناسبات، والمظلة والقطاعة لتغطية الرأس والحماية والزينة.</p></article><article class="info-card"><h3>الزواجات والمناسبات</h3><p>تظهر فيها الحلي والحناء والنباتات العطرية بوصفها جزءًا من طقوس التجمل والحضور الاجتماعي.</p></article></div><div class="pdf-preview"><div><h3>معاينة ملف اللباس</h3><p>الصور أدناه تظهر الصفحات كاملة، ويمكن فتح ملف PDF مباشرة.</p><a class="btn primary" href="traditional_clothing.pdf" target="_blank" rel="noopener">فتح ملف اللباس التراثي</a></div><div class="preview-images"><a href="traditional_clothing_page_1_full.jpg" target="_blank"><img src="traditional_clothing_page_1_full.jpg" alt="صفحة 1 من ملف اللباس التراثي"></a><a href="traditional_clothing_page_2_full.jpg" target="_blank"><img src="traditional_clothing_page_2_full.jpg" alt="صفحة 2 من ملف اللباس التراثي"></a></div></div><div class="pdf-embed"><h3>المستند داخل الصفحة</h3><iframe src="traditional_clothing.pdf#toolbar=1"></iframe></div></section>
-<section id="videos" class="section tinted"><div class="section-head"><span>04</span><h2>مرئيات من الموروث</h2><p>مقاطع مرئية مضافة ضمن الأرشيف. إن لم يظهر الفيديو في المتصفح، يوجد أسفل كل مقطع رابط مباشر لفتحه.</p></div><div class="videos"><figure class="video-card">
-  <video controls preload="metadata" playsinline poster="video_01.jpg">
-    <source src="video_01.mp4" type="video/mp4">
-    المتصفح لا يدعم تشغيل الفيديو.
-  </video>
-  <figcaption>مادة مرئية رقم 1 — <a href="video_01.mp4" target="_blank" rel="noopener">فتح الفيديو مباشرة</a></figcaption>
-</figure>
-<figure class="video-card">
-  <video controls preload="metadata" playsinline poster="video_02.jpg">
-    <source src="video_02.mp4" type="video/mp4">
-    المتصفح لا يدعم تشغيل الفيديو.
-  </video>
-  <figcaption>مادة مرئية رقم 2 — <a href="video_02.mp4" target="_blank" rel="noopener">فتح الفيديو مباشرة</a></figcaption>
-</figure>
-<figure class="video-card">
-  <video controls preload="metadata" playsinline poster="video_03.jpg">
-    <source src="video_03.mp4" type="video/mp4">
-    المتصفح لا يدعم تشغيل الفيديو.
-  </video>
-  <figcaption>مادة مرئية رقم 3 — <a href="video_03.mp4" target="_blank" rel="noopener">فتح الفيديو مباشرة</a></figcaption>
-</figure>
-<figure class="video-card">
-  <video controls preload="metadata" playsinline poster="video_04.jpg">
-    <source src="video_04.mp4" type="video/mp4">
-    المتصفح لا يدعم تشغيل الفيديو.
-  </video>
-  <figcaption>مادة مرئية رقم 4 — <a href="video_04.mp4" target="_blank" rel="noopener">فتح الفيديو مباشرة</a></figcaption>
-</figure></div></section>
-<section id="files" class="section files-section"><div class="section-head"><span>05</span><h2>الملفات المرفقة</h2><p>روابط مباشرة للمواد المضافة.</p></div><div class="download-list"><a href="popular_games.pdf" target="_blank" rel="noopener">الألعاب الشعبية في منطقة جازان PDF</a><a href="traditional_clothing.pdf" target="_blank" rel="noopener">اللباس التراثي PDF</a></div></section>
-</main><footer><b>ذاكرة جازان</b><p>جميع الحقوق محفوظة — أرشيف تراثي وثائقي لخدمة الذاكرة المحلية.</p></footer>
-</body></html>
+<header class="topbar">
+  <nav class="nav">
+    <a class="brand" href="index.html">
+      <img src="assets/images/logo.png" alt="ذاكرة جازان">
+      <div><h1>ذاكرة جازان</h1><span>JAZAN MEMORY</span></div>
+    </a>
+    <div class="links">
+      <a class="active" href="index.html">الرئيسية</a>
+      <a href="documents.html">الوثائق والصكوك</a>
+      <a href="#regions">تقسيمات جازان</a>
+      <a href="board.html">لوحة الذكريات</a>
+      <a href="admin.html">لوحة ذاكرة جازان</a>
+    </div>
+    <div class="actions">
+      <a class="iconBtn" href="documents.html" title="بحث">⌕</a>
+      <a class="btn ghost" href="admin.html">لوحة ذاكرة جازان 🔒</a>
+    </div>
+  </nav>
+</header>
+
+<section class="hero">
+  <div class="heroContent">
+    <div class="orn">❖</div>
+    <h2>ذاكرة جازان</h2>
+    <h3>أرشيف الوثائق والصكوك والصور والذكريات</h3>
+    <p>موقع رقمي لحفظ الصكوك والوثائق التاريخية لمنطقة جازان، مع صور قديمة وفيديوهات ولوحة مشاركات تسمح للإدارة بإضافة صورة ونص مثل المنتديات والبلاك بورد، مع إبراز تهامة والجبال والساحل والجزر.</p>
+    <div class="heroBtns">
+      <a class="btn dark" href="documents.html">تصفح الوثائق والصكوك 📜</a>
+      <a class="btn" href="board.html">الذهاب إلى لوحة الذكريات 📝</a>
+    </div>
+  </div>
+</section>
+
+<section class="stats">
+  <div class="stat"><i>📜</i><b id="docCount">0</b><span>وثيقة وصك</span></div>
+  <div class="stat"><i>🖼</i><b id="photoCount">0</b><span>صورة تاريخية</span></div>
+  <div class="stat"><i>🎥</i><b id="videoCount">0</b><span>فيديو أرشيفي</span></div>
+  <div class="stat"><i>📝</i><b id="postCount">0</b><span>منشور وذكرى</span></div>
+  <div class="stat"><i>🗺</i><b>3</b><span>تقسيمات رئيسية</span></div>
+</section>
+
+<section class="section docsFirst">
+  <div class="head">
+    <h2>الوثائق والصكوك</h2>
+    <a class="btn ghost miniWide" href="documents.html">عرض جميع الوثائق ←</a>
+  </div>
+  <p class="introText">القسم الأهم في الموقع: أرشفة صكوك الملكيات والمبايعات والأوقاف والمعاملات المالية مع بيانات دقيقة، صورة عالية الوضوح، تاريخ، موقع، تصنيف، وصف، وأسماء الشهود عند توفرها.</p>
+  <div class="cards" id="docCards"></div>
+  <div class="features">
+    <div class="feature">🖼 صور عالية الدقة</div>
+    <div class="feature">🗂 تصنيفات حسب النوع والتاريخ</div>
+    <div class="feature">📋 بيانات تفصيلية للوثيقة</div>
+    <div class="feature">🔍 بحث متقدم</div>
+    <div class="feature">🔒 إدارة خاصة</div>
+  </div>
+</section>
+
+<section class="section" id="regions">
+  <div class="title">
+    <h2>تقسيمات جازان</h2>
+    <p>تم تخصيص صور وخلفيات للموقع تُبرز تهامة والجبال والساحل والجزر، ويمكن لاحقًا إضافة صور جديدة من لوحة ذاكرة جازان ضمن كل قسم.</p>
+  </div>
+  <div class="regionGrid">
+    <a class="regionCard" href="documents.html?cat=تهامة">
+      <img src="assets/images/region-tihama.png" alt="تهامة جازان">
+      <div class="regionOverlay"></div>
+      <div class="regionBody"><span class="chip">تهامة</span><h3>تهامة جازان</h3><p>السهل الزراعي، القرى القديمة، النخيل والذاكرة الاجتماعية.</p></div>
+    </a>
+    <a class="regionCard" href="documents.html?cat=الجبال">
+      <img src="assets/images/region-mountains.png" alt="جبال جازان">
+      <div class="regionOverlay"></div>
+      <div class="regionBody"><span class="chip">الجبال</span><h3>جبال جازان</h3><p>المدرجات الزراعية، العمارة الحجرية، والقرى الجبلية.</p></div>
+    </a>
+    <a class="regionCard" href="documents.html?cat=الساحل والجزر">
+      <img src="assets/images/region-coast.png" alt="ساحل وجزر جازان">
+      <div class="regionOverlay"></div>
+      <div class="regionBody"><span class="chip">الساحل والجزر</span><h3>الساحل والجزر</h3><p>البحر والقوارب والنخيل والقرى الساحلية وما يتصل بفرسان والساحل.</p></div>
+    </a>
+  </div>
+</section>
+
+<section class="section" id="spotlight">
+  <div class="spotlight">
+    <img src="assets/images/village-1396.png" alt="حياة القرية في جازان">
+    <div class="spotText">
+      <div class="label">صورة أرشيفية مميزة</div>
+      <h2>حياة القرية في جازان عام 1396هـ / 1976م</h2>
+      <p>لقطة قديمة توثق جانبًا من الحياة اليومية، بيوت العشش، الجلسات الشعبية، وملامح البيئة الريفية التي ارتبطت بذاكرة المكان والإنسان.</p>
+      <a class="btn" href="documents.html?type=صورة">استعراض المزيد من الصور التاريخية</a>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="title"><h2>لوحة الذكريات والمشاركات</h2><p>قسم شبيه بالمنتديات والبلاك بورد: يمكن إضافة صورة مع نص وعنوان واسم كاتب لتظهر كمنشورات أرشيفية.</p></div>
+  <div class="postPreviewGrid" id="boardPosts"></div>
+  <div class="centerBtn"><a class="btn dark" href="board.html">دخول لوحة الذكريات</a></div>
+</section>
+
+<section class="section" id="categories">
+  <div class="title"><h2>تصفح حسب الأقسام</h2></div>
+  <div class="catGrid">
+    <a class="cat" href="documents.html?type=وثيقة"><img src="assets/images/deed-1.jpg"><div>الوثائق والصكوك</div></a>
+    <a class="cat" href="documents.html?cat=مبايعات"><img src="assets/images/deed-2.jpg"><div>البيع والمبايعات</div></a>
+    <a class="cat" href="documents.html?cat=ملكية وأملاك"><img src="assets/images/deed-3.jpg"><div>الملكية والأملاك</div></a>
+    <a class="cat" href="documents.html?cat=تهامة"><img src="assets/images/region-tihama.png"><div>تهامة جازان</div></a>
+    <a class="cat" href="documents.html?cat=الجبال"><img src="assets/images/region-mountains.png"><div>جبال جازان</div></a>
+    <a class="cat" href="documents.html?cat=الساحل والجزر"><img src="assets/images/region-coast.png"><div>الساحل والجزر</div></a>
+  </div>
+</section>
+
+<section class="section">
+  <div class="title"><h2>آخر الإضافات</h2></div>
+  <div class="updates" id="updates"></div>
+</section>
+
+<section class="cta">
+  <h2>هل تملك وثيقة أو صورة أو ذكرى تاريخية؟</h2>
+  <p>يمكن إضافة الوثائق والصور والمنشورات من لوحة ذاكرة جازان، مع إمكانية كتابة موضوع كامل وإرفاق صورة مثل المنتديات.</p>
+  <a class="btn dark" href="admin.html">إضافة مادة من لوحة ذاكرة جازان</a>
+</section>
+
+<footer class="footer" id="about">
+  <div class="footerGrid">
+    <div>
+      <h3>ذاكرة جازان</h3>
+      <p>مشروع يهدف إلى حفظ الوثائق والصكوك والصور التاريخية والذكريات الشفهية لمنطقة جازان، ضمن واجهة بصرية تُبرز تهامة والجبال والساحل والجزر.</p>
+    </div>
+    <div>
+      <h3>روابط سريعة</h3>
+      <ul>
+        <li><a href="documents.html">الوثائق والصكوك</a></li>
+        <li><a href="documents.html?type=صورة">الصور التاريخية</a></li>
+        <li><a href="board.html">لوحة الذكريات</a></li>
+        <li><a href="admin.html">لوحة ذاكرة جازان</a></li>
+      </ul>
+    </div>
+    <div>
+      <h3>مناطق جازان</h3>
+      <ul><li>تهامة</li><li>الساحل والجزر</li><li>الجبال</li><li>صبيا</li><li>المسارحة</li></ul>
+    </div>
+    <div class="newsletter">
+      <h3>اشترك في النشرة</h3>
+      <input placeholder="أدخل بريدك الإلكتروني">
+      <button class="btn">اشترك ✉</button>
+    </div>
+  </div>
+  <div class="copyright">جميع الحقوق محفوظة © ذاكرة جازان 2026</div>
+</footer>
+
+<div class="modal" id="modal"><div class="modalContent"><button class="btn dark" onclick="closeModal()">إغلاق</button><h2 id="modalTitle"></h2><div id="modalBody"></div></div></div>
+<script src="assets/js/data.js"></script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>

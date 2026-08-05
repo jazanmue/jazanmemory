@@ -10,7 +10,7 @@ async function saveItem(e){
   const id=f('itemId').value||('x'+Date.now());
   const file=f('file').files[0];
   const old=byId(id);
-  let src=old?.src||'deed-1.jpg';
+  let src=old?.src||'assets/images/deed-1.jpg';
   let media=old?.media||'image';
   if(file){
     src=await fileToDataURL(file);
@@ -20,7 +20,7 @@ async function saveItem(e){
   } else {
     media='image';
   }
-  if(f('type').value==='منشور' && !file && !old){ src='region-tihama.png'; media='image'; }
+  if(f('type').value==='منشور' && !file && !old){ src='assets/images/region-tihama.png'; media='image'; }
   const item={
     id,
     type:f('type').value,
@@ -48,5 +48,5 @@ function editItem(id){const x=byId(id);if(!x)return;itemId.value=x.id;type.value
 function deleteItem(id){if(!confirm('تأكيد حذف العنصر؟'))return;saveItems(getItems().filter(x=>x.id!==id));renderAdmin();toast('تم الحذف')}
 function exportData(){const data=JSON.stringify(getItems(),null,2);const a=document.createElement('a');a.href=URL.createObjectURL(new Blob([data],{type:'application/json'}));a.download='jazan-memory-data.json';a.click();toast('تم تنزيل نسخة البيانات')}
 function importData(e){const f=e.target.files[0];if(!f)return;const r=new FileReader();r.onload=()=>{try{const data=JSON.parse(r.result);if(!Array.isArray(data))throw Error();saveItems(data);renderAdmin();toast('تم استيراد البيانات')}catch{toast('ملف غير صالح')}};r.readAsText(f)}
-function resetAll(){if(confirm('سيتم استرجاع البيانات الافتراضية وحذف إضافات هذا المتصفح. هل أنتِ متأكدة؟')){resetItems();renderAdmin();toast('تم استرجاع البيانات الافتراضية')}}
+function resetAll(){if(confirm('سيتم استرجاع البيانات الافتراضية وحذف البيانات الحالية. هل أنتِ متأكدة؟')){resetItems();renderAdmin();toast('تم استرجاع البيانات الافتراضية')}}
 document.addEventListener('DOMContentLoaded',()=>{if(sessionStorage.getItem('jm_admin')==='1')showAdmin();document.querySelector('#itemForm').addEventListener('submit',saveItem);document.querySelector('#importFile').addEventListener('change',importData)})
